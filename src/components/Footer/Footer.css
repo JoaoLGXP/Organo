@@ -1,0 +1,27 @@
+.footer {
+    background-color: #004da7;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 32px 60px;
+}
+
+.footer ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer ul li {
+    list-style: none; 
+}
+
+.footer ul li img {
+    width: 32px;
+
+}
+
+.footer ul li:last-child {
+    margin-right: 0px;
+}

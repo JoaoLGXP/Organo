@@ -1,0 +1,38 @@
+.heroCard {
+    width: 280px;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.09);
+    box-sizing: border-box;
+    width: 280px;
+    height: 280px;
+}
+
+.heroCard .cabecalho {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.heroCard img {
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -50px;
+}
+
+.heroCard img:hover {
+    transform: scale(1.3);
+}
+
+.heroCard .rodape {
+    background: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+    padding-top: 90px;
+    padding-bottom: 40px;
+}
+
+.heroCard .rodape h4 {
+    color: #313131;
+    font-size: 24px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}

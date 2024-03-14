@@ -1,0 +1,27 @@
+.organo-text-field {
+    margin: 24px 0;
+}
+
+.organo-text-field label {
+    display: block;
+    font-size: 24px;
+    font-weight: 600;
+    color: #212121;
+    margin-bottom: 5px;
+}
+
+.organo-text-field input {
+    background-color: #FFF;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    border: none;
+    font-size: 24px;
+    padding: 24px;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.organo-text-field input::placeholder {
+    font-size: 24px;
+    color: #a4a4a4;
+}
