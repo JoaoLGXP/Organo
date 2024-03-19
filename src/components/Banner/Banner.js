@@ -12,9 +12,11 @@ function Banner() {
           <p>organizados em um só lugar!</p>
         </div>
       </div>
-      <div className="organo-banner-itens-right">
-        <img src="/images/logoow.png" alt="" />
-      </div>
+      <a href="https://overwatch.blizzard.com/pt-br/heroes/" target="blank" rel="noreferrer">
+        <div className="organo-banner-itens-right">
+          <img src="/images/logoow.png" alt="" />
+        </div>
+      </a>
     </header>
   );
 }

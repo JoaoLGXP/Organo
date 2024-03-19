@@ -1,21 +1,30 @@
 import "./HeroCard.css";
+import { IoMdCloseCircle } from "react-icons/io";
 
-const HeroCard = ({ nome, imagem, corDeFundo }) => {
+const HeroCard = ({ hero, id, nome, imagem, corDeFundo, handleDelete }) => {
   return (
-    <a
-      href={`https://overwatch.blizzard.com/pt-br/heroes/${nome}`}
-      target="_blank"
-      rel="noreferrer"
-    >
       <div className="heroCard">
-        <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
-          <img src={imagem} alt={nome} />
-        </div>
+        <IoMdCloseCircle 
+          size={25} 
+          color="#000" 
+          className="deletar" 
+          onClick={() => handleDelete(id)}
+        />
+        <a
+          href={`https://overwatch.blizzard.com/pt-br/heroes/${nome}`}
+          target="_blank"
+          rel="noreferrer"
+        >
+          <div className="cabecalho" style={{ backgroundColor: corDeFundo }}>
+            <img src={imagem} alt={nome} />
+          </div>
+        </a>
+
         <div className="rodape">
           <h4>{nome}</h4>
+          <p className="id">{id}</p>
         </div>
       </div>
-    </a>
   );
 };
 

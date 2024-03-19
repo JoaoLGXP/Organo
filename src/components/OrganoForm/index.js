@@ -5,17 +5,22 @@ import Button from "../Button";
 import ListField from "../ListField";
 import TextField from "../TextField";
 import "./OrganoForm.css";
+import { v4 as uuidv4 } from 'uuid';
 
 const OrganoForm = (props) => {
 
+  const id = uuidv4();
   const [name, setName] = useState("");
   const [role, setRole] = useState("");
   const [image, setImage] = useState("");
+  const [nameRole, setNameRole] = useState("");
+  const [colorRole, setColorRole] = useState("");
   
 
   const handleSubmit = (event) => {
     event.preventDefault();
     props.handleRegisteredHero({
+      id,
       name,
       image,
       role
